@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+    <title>2048遊戲示範</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="header">
+        <h1>2048</h1>
+        <div class="score-container">
+            <div class="score-box">
+                <div class="title">得分</div>
+                <div class="score" id="score">0</div>
+            </div>
+            <div class="score-box">
+                <div class="title">最佳</div>
+                <div class="score" id="best-score">0</div>
+            </div>
+        </div>
+        <button class="new-game-btn" id="new-game">新遊戲</button>
+    </div>
+    <div class="game-container">
+        <div class="grid-container" id="grid-container">
+            <!-- 格子透過JS動態生成 -->
+        </div>
+    </div>
+    <div class="game-message" id="game-message">
+        <p id="message-text"></p>
+        <button id="keep-going">繼續遊玩</button>
+        <button id="try-again">再玩一次</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
